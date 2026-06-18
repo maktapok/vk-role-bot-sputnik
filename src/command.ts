@@ -54,7 +54,7 @@ export function commandUserRoutes(hearManager: HearManager<IQuestionMessageConte
         
         if (await checkGroupSubscriber(context.senderId, group_id_now)) {
             keyboard
-            .textButton({ label: '🌐 Тегатор', payload: { command: 'tagator_menu' }, color: 'primary!' })
+            .textButton({ label: '🌐 Тегатор', payload: { command: 'tagator_menu' }, color: 'primary' })
             .textButton({ label: '🔍 Поиск', payload: { command: 'inventory_enter' }, color: 'primary' }).row()
         }
         
